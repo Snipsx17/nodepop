@@ -1,0 +1,59 @@
+:root {
+  --main-color: #a0d8b3;
+  --black: #000;
+  --white: #fff;
+  --bg-success-notification: #5dd986;
+  --bg-error-notification: #e34b4b;
+}
+
+/***** RESET ******/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+header {
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.42);
+}
+
+.nav-link {
+  color: var(--main-color);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.btn,
+.btn-primary {
+  font-size: 1.6rem;
+  background-color: var(--main-color);
+  border: var(--main-color);
+}
+.btn-primary:hover {
+  background-color: var(--main-color);
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
