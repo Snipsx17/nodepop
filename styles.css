@@ -35,6 +35,17 @@ header {
   color: var(--white);
 }
 
+#register,
+#login {
+  width: 60%;
+  padding-top: 3rem;
+}
+
+.form-control {
+  height: 3rem;
+  font-size: 1.4rem;
+}
+
 .btn,
 .btn-primary {
   font-size: 1.6rem;
