@@ -1,5 +1,6 @@
 'use strict';
 
+import { loadSpinnerController } from '../load-spinner/loadSpinnerController.js';
 import { customEventDispatch } from '../utils/customEventDispatch.js';
 import { createUser } from './registerModel.js';
 
@@ -8,10 +9,14 @@ export const registerController = async (registerForm) => {
   const email = form.get('email');
   const password = form.get('password');
   const passwordConfirmation = form.get('password-confirmation');
+  const loadSpinner = document.querySelector('.loader-container');
+  const { showLoadSpinner, hideLoadSpinner } =
+    loadSpinnerController(loadSpinner);
   let userData;
 
   try {
     userData = validateForm(email, password, passwordConfirmation);
+    showLoadSpinner();
     await createUser(userData);
     customEventDispatch(
       'userRegistration',
@@ -33,6 +38,8 @@ export const registerController = async (registerForm) => {
       },
       registerForm
     );
+  } finally {
+    hideLoadSpinner();
   }
 };
 
