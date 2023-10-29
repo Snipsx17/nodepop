@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./notifications/styles.css" />
+    <link rel="stylesheet" href="./load-spinner/styles.css" />
   </head>
   <body>
     <header>
@@ -28,23 +30,20 @@
               width="100px"
             />
           </a>
-
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Logout</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Add new ad</a>
-            </li>
-          </ul>
+          <ul class="nav nav-pills"></ul>
         </nav>
       </div>
     </header>
     <!-- END HEADER -->
     <main>
       <h2 class="title">ad list</h2>
+      <h3 id="userMessage"></h3>
       <section id="list-ads"></section>
     </main>
+    <section id="notifications"></section>
+    <div class="loader-container">
+      <span class="loader"></span>
+    </div>
 
     <footer class="footer">
       <center>

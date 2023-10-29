@@ -23,7 +23,7 @@ export const buildAd = (item) => {
             <h3 class="card-title">Price:${item.price}$</h3>
             <h4 class="card-title">${item.name}</h4>
             <p class="card-text">Description: ${item.description}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
           </div>
           <div class="card-tags">
             <h4>tags:</h4>
@@ -31,4 +31,8 @@ export const buildAd = (item) => {
           </div>
         </div>
   `;
+};
+
+export const noAdsToList = () => {
+  return `Nothing to show, login and start posting your ads`;
 };

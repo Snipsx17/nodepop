@@ -10,7 +10,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10px */
-  position: relative;
 }
 *,
 *:before,
@@ -20,6 +19,10 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 2;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-bottom: 1rem;
+  position: relative;
 }
 
 header {
@@ -36,12 +39,14 @@ header {
 }
 
 #register,
-#login {
+#login,
+#new-ad {
   width: 60%;
   padding-top: 3rem;
 }
 
-.form-control {
+.form-control,
+.form-select {
   height: 3rem;
   font-size: 1.4rem;
 }
@@ -66,7 +71,7 @@ header {
   margin-bottom: 5rem;
   padding: 2rem 5rem;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
