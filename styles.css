@@ -10,7 +10,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10px */
-  overflow: hidden;
+  position: relative;
 }
 *,
 *:before,
@@ -60,6 +60,39 @@ header {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+#list-ads {
+  margin-bottom: 5rem;
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.card {
+  width: 25rem;
+  padding: 1rem;
+}
+
+.card img {
+  height: 20rem;
+}
+
+.card-body .status {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.badge.rounded-pill {
+  background-color: var(--bg-success-notification);
+  margin-right: 0.5rem;
+}
+
+.badge.rounded-pill.status {
+  background-color: var(--main-color);
 }
 
 .footer {
