@@ -1,0 +1,16 @@
+.ad-img {
+  width: 35rem;
+  position: relative;
+}
+
+.ad-img > img {
+  width: 100%;
+}
+
+.details {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
