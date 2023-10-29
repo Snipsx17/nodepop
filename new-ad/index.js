@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const showNotification = notificationController(notifications);
   const newAdForm = document.querySelector('#new-ad-form');
   sessionController();
+  const token = localStorage.getItem('jwt');
+
+  if (!token) {
+    window.location = './index.html';
+  }
 
   newAdForm.addEventListener('adCreated', (event) => {
     const { type, message } = event.detail;

@@ -13,6 +13,7 @@ export const buildAd = (item) => {
 
   return `
   <div class="card">
+  <a href="./ad-details.html?id=${item.id}">
           <img
             src="${item.picture || './public/no-pic.jpeg'}"
             class="card-img-top"
@@ -23,12 +24,12 @@ export const buildAd = (item) => {
             <h3 class="card-title">Price:${item.price}$</h3>
             <h4 class="card-title">${item.name}</h4>
             <p class="card-text">Description: ${item.description}</p>
-
           </div>
           <div class="card-tags">
             <h4>tags:</h4>
             ${tags}
           </div>
+          </a>
         </div>
   `;
 };
