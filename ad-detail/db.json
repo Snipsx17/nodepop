@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "username": "user1@user.com",
+      "password": "$2b$10$TlRL5pmSsbMnCcW2NVk1JOJhD9/TxFH9Mv9WaXzkuAk8.iKjZ9o3e",
+      "id": 1
+    },
+    {
+      "username": "user2@user.com",
+      "password": "$2b$10$TlRL5pmSsbMnCcW2NVk1JOJhD9/TxFH9Mv9WaXzkuAk8.iKjZ9o3e",
+      "id": 2
+    },
+    {
+      "username": "user3@user.com",
+      "password": "$2b$10$TlRL5pmSsbMnCcW2NVk1JOJhD9/TxFH9Mv9WaXzkuAk8.iKjZ9o3e",
+      "id": 3
+    },
+    {
+      "username": "ing.uberthhernandez@gmail.com",
+      "password": "$2b$10$aXgNVJOKLhzpGrIio.N3a.Rfi8N58vqwnZm0096OCvXdKNQME2ymi",
+      "id": 4
+    },
+    {
+      "username": "snipsx2@gmail.com",
+      "password": "$2b$10$JFEEhd41YcstDePKfapHf.1.i8dCHQDJhvYUBe780AhmVGM//8fDC",
+      "id": 5
+    },
+    {
+      "username": "user4@user.com",
+      "password": "$2b$10$JFEEhd41YcstDePKfapHf.1.i8dCHQDJhvYUBe780AhmVGM//8fDC",
+      "id": 6
+    },
+    {
+      "username": "user6@user.com",
+      "password": "$2b$10$0CaGvSRmYed70zSTJADhZuwIO2OtHv9jiwLbCPqZJSSZB3y34cbcu",
+      "id": 7
+    }
+  ],
+  "ads": [
+    {
+      "name": "test",
+      "description": "test",
+      "picture": "",
+      "price": "23",
+      "tags": [
+        "text",
+        "text"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T16:36:50.929Z",
+      "id": 1
+    },
+    {
+      "name": "bike for kids",
+      "description": "sell excelent bike for kids",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOovU3VyUtMqG6oGCQxKzhwGlbi5g2sbDdOhKkxEofo5wNg-FORmuNJOnjy8BgrsFoFWM&usqp=CAU",
+      "price": "55",
+      "tags": [
+        "kids",
+        "bike",
+        "play"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T16:39:08.875Z",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "picture": "",
+      "price": "12",
+      "tags": [
+        "text",
+        "text"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:31:27.931Z",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "picture": "",
+      "price": "12",
+      "tags": [
+        "text",
+        "text"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:32:40.126Z",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "picture": "",
+      "price": "12",
+      "tags": [
+        "text",
+        "text"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:34:12.242Z",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "picture": "",
+      "price": "12",
+      "tags": [
+        "text",
+        "text"
+      ],
+      "status": "for sell",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:34:13.790Z",
+      "id": 7
+    }
+  ]
+}
