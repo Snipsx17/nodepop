@@ -7,9 +7,6 @@ import { notificationController } from '../notifications/notificationController.
 
 document.addEventListener('DOMContentLoaded', () => {
   const token = localStorage.getItem('jwt');
-  if (!token) {
-    window.location = './index.html';
-  }
   const jwt = decodeToken(token);
   const adDetail = document.querySelector('.ad-detail');
   const notifications = document.querySelector('#notifications');

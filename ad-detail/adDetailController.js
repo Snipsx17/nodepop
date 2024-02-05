@@ -6,27 +6,30 @@ import { customEventDispatch } from '../utils/customEventDispatch.js';
 
 export const adDetailController = async (adDetail, jwt) => {
   const params = new URLSearchParams(window.location.search);
-  const tweetId = params.get('id');
+  const advertId = params.get('id');
 
-  if (tweetId) {
+  if (advertId) {
     try {
-      const adData = await getAd(tweetId);
+      const adData = await getAd(advertId);
       adDetail.innerHTML = buildAd(adData);
-
-      adData.user.id === jwt.userId ? addDeleteButton(tweetId, adDetail) : null;
+      if (jwt) {
+        adData.user.id === jwt.userId
+          ? addDeleteButton(advertId, adDetail)
+          : null;
+      }
     } catch (error) {
       console.log(error);
     }
   }
 };
 
-const addDeleteButton = (tweetId, adDetail) => {
+const addDeleteButton = (advertId, adDetail) => {
   const deleteBtnContainer = document.querySelector('#delete-btn-container');
   deleteBtnContainer.innerHTML = buildDeleteBtn();
 
   const deleteBtn = document.querySelector('#delete-btn');
   deleteBtn.addEventListener('click', async () => {
-    await deleteAd(tweetId);
+    await deleteAd(advertId);
     customEventDispatch(
       'adDeleted',
       { type: 'success', message: 'Ad was deleted' },
