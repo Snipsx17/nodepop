@@ -12,6 +12,7 @@ export const adDetailController = async (adDetail, jwt) => {
     try {
       const adData = await getAd(tweetId);
       adDetail.innerHTML = buildAd(adData);
+
       adData.user.id === jwt.userId ? addDeleteButton(tweetId, adDetail) : null;
     } catch (error) {
       console.log(error);
@@ -21,9 +22,9 @@ export const adDetailController = async (adDetail, jwt) => {
 
 const addDeleteButton = (tweetId, adDetail) => {
   const deleteBtnContainer = document.querySelector('#delete-btn-container');
-  const deleteBtn = document.querySelector('#delete-btn');
-
   deleteBtnContainer.innerHTML = buildDeleteBtn();
+
+  const deleteBtn = document.querySelector('#delete-btn');
   deleteBtn.addEventListener('click', async () => {
     await deleteAd(tweetId);
     customEventDispatch(
