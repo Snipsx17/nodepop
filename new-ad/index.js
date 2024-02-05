@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   newAdForm.addEventListener('adCreated', (event) => {
     const { type, message } = event.detail;
     showNotification(type, message);
+    window.location = './index.html';
   });
 
   newAdForm.addEventListener('submit', async (event) => {
