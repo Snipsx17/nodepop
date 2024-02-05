@@ -29,11 +29,13 @@ const addDeleteButton = (advertId, adDetail) => {
 
   const deleteBtn = document.querySelector('#delete-btn');
   deleteBtn.addEventListener('click', async () => {
-    await deleteAd(advertId);
-    customEventDispatch(
-      'adDeleted',
-      { type: 'success', message: 'Ad was deleted' },
-      adDetail
-    );
+    if (window.confirm('You will delete the advert, do you want continue?')) {
+      await deleteAd(advertId);
+      customEventDispatch(
+        'adDeleted',
+        { type: 'success', message: 'Ad was deleted' },
+        adDetail
+      );
+    }
   });
 };
